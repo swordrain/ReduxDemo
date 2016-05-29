@@ -5,6 +5,7 @@ import MovieList from './Component/MovieList';
 import FavoriteList from './Component/FavoriteList';
 import LoadMovieButton from './Component/LoadMovieButton';
 import {addNewMovies, addNewFavorite, removeFavorite, fetchMovies} from './Action/actions';
+import $ from 'jquery';
 
 class App extends Component {
 
@@ -27,6 +28,11 @@ class App extends Component {
 		dispatch(removeFavorite(movie));
 	}
 
+	loadImage() {
+
+	}
+
+	
 	render() {
 		const { dispatch, movies, loading, favorites } = this.props;
 		console.log(movies);
